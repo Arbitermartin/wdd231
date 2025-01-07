@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Course Home Page</title>
+    <meta name="description" content="Homepage for course at BYU-IDAHO for WDD231 Web Development Frontend I">
+    <meta name="author" content="Martin Arexander Kasike">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>hello</h1>
+   <header>
+    <img src="./images/martin.jpg" alt="Martin Kasike">
+    <h2> Martin Arexander Kasike</h2>
+   </header>
+       <nav>
+        <div class="nav_bar">
+            <ul class="nav_links">
+                <li><a href="">Home</a></li>
+                <li><a href="">Chamber</a></li>
+                <li><a href="">GitHub Profile</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </div>
+       </nav>
+       <main>
+     
+        <section>
+            <div class="container">
+                <div class="container-left">
+                    <h2>CourseWork</h2>
+
+                </div>
+                <div class="container-right">
+                    <div class="content">
+                        <h2>Dar es salaam, Tanzania</h2>
+                        <div class="off">
+                            <img src="./images/martin.jpg" alt="">
+                        </div>
+                        <div class="cap">
+                            <p>Tanzania</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       <section>
+        <div class="certificate-container">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+              <button class="filter active">All</button>
+              <button class="filter">CSE</button>
+              <button class="filter">WDD</button>
+            </div>
+            <div class="course-grid">
+              <div class="course cse">CSE 110</div>
+              <div class="course wdd">WDD 130</div>
+              <div class="course cse">CSE 111</div>
+              <div class="course cse">CSE 210</div>
+              <div class="course wdd">WDD 131</div>
+              <div class="course wdd">WDD 231</div>
+            </div>
+          </div>
+       </section>
+        
+       </main>
+       <footer>
+        <p>
+            &copy; <span id="currentYear"></span> Martin Kasike, Iringa, Tanzania
+        </p>
+        <p id="lastModified"></p>
+   
 </body>
 </html>
