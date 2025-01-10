@@ -77,7 +77,11 @@ const courses = [
       completed: false
   }
 ]
-  
+//   menu
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
   
   // year
   const year = document.querySelector("#currentYear");
