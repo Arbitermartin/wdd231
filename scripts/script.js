@@ -9,7 +9,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
           'HTML',
           'CSS'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
       technology: [
           'Python'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
       technology: [
           'C#'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
           'CSS',
           'JavaScript'
       ],
-      completed: false
+      completed: true
   },
   {
       subject: 'WDD',
@@ -77,11 +77,47 @@ const courses = [
       completed: false
   }
 ]
+ // Function to filter courses
+ function filterCourses(filter) {
+    const courseContainer = document.getElementById('courseContainer');
+    const totalCreditsDiv = document.getElementById('totalCredits');
+    courseContainer.innerHTML = ''; // Clear previous courses
+    totalCreditsDiv.textContent = ''; // Clear previous total credits
+
+    // Filter courses by subject
+    const filteredCourses = filter === 'All' ? courses : courses.filter(course => course.subject === filter);
+
+    // Calculate total credits
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+
+    // Render filtered courses
+    filteredCourses.forEach(course => {
+        const courseCard = document.createElement('div');
+        courseCard.className = 'course-card';
+        courseCard.innerHTML = `
+            <h2>${course.subject} ${course.number}</h2>
+            <p><strong>Title:</strong> ${course.title}</p>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+            <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+        `;
+        courseContainer.appendChild(courseCard);
+    });
+
+    // Display total credits
+    totalCreditsDiv.textContent = `Total Credits: ${totalCredits}`;
+}
+
+// Default view: Display all courses
+filterCourses('All');
 //   menu
 function toggleMenu() {
     const nav = document.querySelector('nav');
     nav.classList.toggle('active');
   }
+//   array for the course
+
+
   
   // year
   const year = document.querySelector("#currentYear");
