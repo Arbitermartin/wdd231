@@ -64,7 +64,7 @@ header {
 nav {
   display: flex;
   margin: 0 auto;
-  background-color: var(--color-primary-variant);
+  background-color: var(--color-bg);
   padding: 2rem;
 }
 
