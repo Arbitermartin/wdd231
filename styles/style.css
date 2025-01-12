@@ -1,4 +1,4 @@
-:root{
+it's:root{
     --primary-color: #6f6af8;
     --color-primary-light: hsl(242,91%,69%,18%);
     --color-primary-variant: #5854c7;
@@ -265,6 +265,8 @@ h1 {
     .course_off{
       max-width: 700px;
       margin: 30px 70px;
+      overflow: hidden;
+
     }
   
     .course-container{
