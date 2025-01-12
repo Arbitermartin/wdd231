@@ -276,21 +276,21 @@ h1 {
       font-size: 0.9rem;
       text-align: center;
     }
-  }
+    .buttons{
+      display: flex;
+    }
+    .course_off{
+      max-width: 700px;
+      margin: 30px 70px;
+    }
   
-  @media screen and (max-width: 480px) {
-    /* Extra-small screens */
-    header {
-      flex-direction: column;
-      text-align: center;
-      padding: 1rem;
-    }
-    .menu img {
-      width: 40px;
-      height: 40px;
-    }
-    .menu h1 {
-      font-size: 1.2rem;
+    .course-container{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      padding: 1.2rem;
+     
+      
     }
     .hamburger {
       margin: 10px 0;
