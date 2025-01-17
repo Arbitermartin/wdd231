@@ -103,6 +103,43 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.container_1 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.card p, .card div {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
 footer {
     display: grid;
     place-items: center;
@@ -162,5 +199,10 @@ footer {
     .navbar-toggler {
         display: block;
     }
-    
+    .container_1{
+        max-width: 400px;
+    }
+    .dashboard {
+        flex-direction: column;
+    }
 }
