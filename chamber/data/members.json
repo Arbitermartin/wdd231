@@ -4,7 +4,7 @@
       "address": "Head quater, Plot 144, Migombani st",
       "phone": "+255659070100",
       "url": "https://softnet.co.tz/",
-      "image": "softnet.jpg",
+      "image": "../images/softnet.jpg",
       "membershipLevel": 1
     },
     {
@@ -12,7 +12,7 @@
       "address": "2nd Floor, Mikumi House, 368 Msasani Road, Oysterbay, 14111 Dar es Salaam, Tanzania",
       "phone": "+255745595692",
       "url": "https://www.tembosoft.co.tz/",
-      "image": "tembosoft.png",
+      "image": "../images/tembosoft.png",
       "membershipLevel": 2
     },
     {
@@ -20,7 +20,7 @@
       "address": "Sam Nujoma Road Mwenge, Dar es Salaam",
       "phone": "+255 746 805 383",
       "url": "https://pcl.co.tz/",
-      "image": "powersoft.png",
+      "image": "../images/powersoft.png",
       "membershipLevel": 3
     },
     {
@@ -28,7 +28,7 @@
         "address": "Dodoma City Jimboni, Roma Complex Dodoma, 2796",
         "phone": " +255 747 762 244",
         "url": "https://www.safco.co.tz/",
-        "image": "safco.png",
+        "image": "../images/safco.png",
         "membershipLevel": 3
       },
       {
@@ -36,7 +36,7 @@
         "address": "Mbagala, Dar es salaam Migombani, Unguja, Zanzibar",
         "phone": "+255622929972",
         "url": "https://www.oasistech.co.tz/",
-        "image": "oasis.png",
+        "image": "../images/oasis.png",
         "membershipLevel": 3
       },
       {
@@ -44,7 +44,7 @@
         "address": "P. O. Box 2569",
         "phone": "+255 22 213 7915",
         "url": "https://www.catsgroup.co.tz/",
-        "image": "cats.png",
+        "image": "../images/cats.png",
         "membershipLevel": 3
       },
       {
@@ -52,7 +52,7 @@
         "address": "The Residence | Mwai Kibaki Road | Dar es Salaam",
         "phone": "+255 769 776 005",
         "url": "https://www.aztek.co.tz/",
-        "image": "aztek.png",
+        "image": "../images/aztek.png",
         "membershipLevel": 3
       },
       {
@@ -60,7 +60,7 @@
         "address": "15 Senga Road, Mikocheni A,Dar Es Salaam, Tanzania",
         "phone": "+255 673 333 595",
         "url": "https://bizytech.com/",
-        "image": "bizy.png",
+        "image": "../images/bizy.png",
         "membershipLevel": 3
       }
      
