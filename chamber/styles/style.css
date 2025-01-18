@@ -211,7 +211,7 @@ h1 {
   
   /* List View */
   .list-view {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
