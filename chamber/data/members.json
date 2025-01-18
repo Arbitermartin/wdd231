@@ -1,0 +1,76 @@
+[
+    {
+      "name": "Alpha Solutions",
+      "address": "123 Business St, Suite 100, Cityville",
+      "phone": "800-123-4567",
+      "url": "www.alphasolutions.com",
+      "image": "../chamber/images/maize.jpeg",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Beta Innovations",
+      "address": "456 Corporate Ave, Tech City",
+      "phone": "800-234-5678",
+      "url": "www.betainnovations.com",
+      "image": "beta.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Gamma Enterprises",
+      "address": "789 Startup Blvd, Innovate Town",
+      "phone": "800-345-6789",
+      "url": "www.gammaenterprises.com",
+      "image": "gamma.png",
+      "membershipLevel": 3
+    },
+    {
+        "name": "Gamma Enterprises",
+        "address": "789 Startup Blvd, Innovate Town",
+        "phone": "800-345-6789",
+        "url": "www.gammaenterprises.com",
+        "image": "gamma.png",
+        "membershipLevel": 3
+      },
+      {
+        "name": "Gamma Enterprises",
+        "address": "789 Startup Blvd, Innovate Town",
+        "phone": "800-345-6789",
+        "url": "www.gammaenterprises.com",
+        "image": "gamma.png",
+        "membershipLevel": 3
+      },
+      {
+        "name": "Gamma Enterprises",
+        "address": "789 Startup Blvd, Innovate Town",
+        "phone": "800-345-6789",
+        "url": "www.gammaenterprises.com",
+        "image": "gamma.png",
+        "membershipLevel": 3
+      },
+      {
+        "name": "Gamma Enterprises",
+        "address": "789 Startup Blvd, Innovate Town",
+        "phone": "800-345-6789",
+        "url": "www.gammaenterprises.com",
+        "image": "gamma.png",
+        "membershipLevel": 3
+      },
+      {
+        "name": "Gamma Enterprises",
+        "address": "789 Startup Blvd, Innovate Town",
+        "phone": "800-345-6789",
+        "url": "www.gammaenterprises.com",
+        "image": "gamma.png",
+        "membershipLevel": 3
+      },
+      {
+        "name": "Gamma Enterprises",
+        "address": "789 Startup Blvd, Innovate Town",
+        "phone": "800-345-6789",
+        "url": "www.gammaenterprises.com",
+        "image": "gamma.png",
+        "membershipLevel": 3
+      }
+
+    
+  ]
