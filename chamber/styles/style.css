@@ -163,6 +163,7 @@ h1 {
     font-size: 1rem;
 }
 /* member data */
+
 .toggle-buttons {
     text-align: center;
     margin: 20px;
@@ -172,6 +173,7 @@ h1 {
     margin: 5px;
     padding: 10px 20px;
     font-size: 16px;
+    cursor: pointer;
   }
   
   #member-container {
@@ -179,16 +181,19 @@ h1 {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    padding: 20px;
   }
   
+  /* Member Card Styles */
   .member-card {
-    border: 1px solid var(--mporipori-color);
+    border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background: var(--color-bg);
-    color: var(--color-white);
+    background: #f9f9f9;
   }
   
   .member-card img {
@@ -196,15 +201,17 @@ h1 {
     height: 100px;
     object-fit: cover;
     margin-bottom: 10px;
+    border-radius: 50%;
   }
   
+  /* Grid View */
   .grid-view .member-card {
     display: inline-block;
   }
   
+  /* List View */
   .list-view {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    flex-direction: column;
     align-items: center;
   }
 
@@ -235,6 +242,9 @@ footer {
     color: var(--color-b);
 }
 @media screen and (max-width: 1200px) {
+    #member-container {
+        gap: 15px;
+      }
     
     .footer{
         grid-template-columns: repeat(2,1fr);
@@ -278,4 +288,26 @@ footer {
         margin:  0 auto;
         margin-bottom: 2rem;
     }
+    .member-card {
+        width: 80%;
+        max-width: 100%;
+      }
+    
+      button {
+        padding: 8px 15px;
+        font-size: 14px;
+      }
 }
+@media screen and (max-width: 480px) {
+    .toggle-buttons {
+      margin: 10px;
+    }
+  
+    .member-card {
+      padding: 10px;
+    }
+  
+    button {
+      width: 100px;
+    }
+  }
