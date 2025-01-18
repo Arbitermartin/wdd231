@@ -175,12 +175,10 @@ h1 {
   }
   
   #member-container {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    align-items: center;
-    margin: 10px 70px;
   }
   
   .member-card {
@@ -240,11 +238,6 @@ footer {
     
     .footer{
         grid-template-columns: repeat(2,1fr);
-    }
-    #member-container{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        margin: 20px 60px;
     }
 
 }
