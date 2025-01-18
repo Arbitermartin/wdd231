@@ -239,6 +239,9 @@ footer {
     .footer{
         grid-template-columns: repeat(2,1fr);
     }
+    #m#member-container{
+        max-width: 400px;
+    }
 
 }
 @media screen and (max-width: 768px) {
