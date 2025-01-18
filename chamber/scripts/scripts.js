@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         const memberDiv = document.createElement("div");
         memberDiv.classList.add("member-card");
         memberDiv.innerHTML = `
-          <img src="./images/${member.image}" alt="${member.name}">
+          <img src="../chamber/images/${member.image}" alt="${member.name}">
           <h3>${member.name}</h3>
           <p>${member.address}</p>
           <p><strong>Phone:</strong> ${member.phone}</p>
