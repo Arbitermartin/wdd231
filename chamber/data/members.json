@@ -1,76 +1,68 @@
 [
     {
-      "name": "Alpha Solutions",
-      "address": "123 Business St, Suite 100, Cityville",
-      "phone": "800-123-4567",
-      "url": "www.alphasolutions.com",
+      "name": "Software company",
+      "address": "Head quater, Plot 144, Migombani st",
+      "phone": "+255659070100",
+      "url": "https://softnet.co.tz/",
       "image": "../chamber/images/maize.jpeg",
       "membershipLevel": 1
     },
     {
-      "name": "Beta Innovations",
-      "address": "456 Corporate Ave, Tech City",
-      "phone": "800-234-5678",
-      "url": "www.betainnovations.com",
+      "name": "Tembosoft Limited",
+      "address": "2nd Floor, Mikumi House, 368 Msasani Road, Oysterbay, 14111 Dar es Salaam, Tanzania",
+      "phone": "+255745595692",
+      "url": "https://www.tembosoft.co.tz/",
       "image": "beta.png",
       "membershipLevel": 2
     },
     {
-      "name": "Gamma Enterprises",
-      "address": "789 Startup Blvd, Innovate Town",
-      "phone": "800-345-6789",
-      "url": "www.gammaenterprises.com",
+      "name": "Powersoft Communications Limited",
+      "address": "Sam Nujoma Road Mwenge, Dar es Salaam",
+      "phone": "+255 746 805 383",
+      "url": "https://pcl.co.tz/",
       "image": "gamma.png",
       "membershipLevel": 3
     },
     {
-        "name": "Gamma Enterprises",
-        "address": "789 Startup Blvd, Innovate Town",
-        "phone": "800-345-6789",
-        "url": "www.gammaenterprises.com",
+        "name": "SAFCO",
+        "address": "Dodoma City Jimboni, Roma Complex Dodoma, 2796",
+        "phone": " +255 747 762 244",
+        "url": "https://www.safco.co.tz/safco_academy/",
         "image": "gamma.png",
         "membershipLevel": 3
       },
       {
-        "name": "Gamma Enterprises",
-        "address": "789 Startup Blvd, Innovate Town",
-        "phone": "800-345-6789",
-        "url": "www.gammaenterprises.com",
+        "name": "Oasis Technologies TZ",
+        "address": "Mbagala, Dar es salaam Migombani, Unguja, Zanzibar",
+        "phone": "+255622929972",
+        "url": "https://www.oasistech.co.tz/",
         "image": "gamma.png",
         "membershipLevel": 3
       },
       {
-        "name": "Gamma Enterprises",
-        "address": "789 Startup Blvd, Innovate Town",
-        "phone": "800-345-6789",
-        "url": "www.gammaenterprises.com",
+        "name": "CATS Tanzania",
+        "address": "P. O. Box 2569",
+        "phone": "+255 22 213 7915",
+        "url": "https://www.catsgroup.co.tz/",
         "image": "gamma.png",
         "membershipLevel": 3
       },
       {
-        "name": "Gamma Enterprises",
-        "address": "789 Startup Blvd, Innovate Town",
-        "phone": "800-345-6789",
-        "url": "www.gammaenterprises.com",
+        "name": "Aztek Solutions",
+        "address": "The Residence | Mwai Kibaki Road | Dar es Salaam",
+        "phone": "+255 769 776 005",
+        "url": "https://www.aztek.co.tz/",
         "image": "gamma.png",
         "membershipLevel": 3
       },
       {
-        "name": "Gamma Enterprises",
-        "address": "789 Startup Blvd, Innovate Town",
-        "phone": "800-345-6789",
-        "url": "www.gammaenterprises.com",
-        "image": "gamma.png",
-        "membershipLevel": 3
-      },
-      {
-        "name": "Gamma Enterprises",
-        "address": "789 Startup Blvd, Innovate Town",
-        "phone": "800-345-6789",
-        "url": "www.gammaenterprises.com",
+        "name": "Bizy Tech Limited",
+        "address": "15 Senga Road, Mikocheni A,Dar Es Salaam, Tanzania",
+        "phone": "+255 673 333 595",
+        "url": "https://bizytech.com/",
         "image": "gamma.png",
         "membershipLevel": 3
       }
-
+     
     
   ]
