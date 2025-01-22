@@ -18,6 +18,7 @@
     --color-white:#f2f2fe;
     --color-light: #055864;
     --color-b: #f2f1ec;
+    --color-black: #000;
 }
 
 
@@ -211,9 +212,6 @@ h1 {
   #grid-view{
     border-radius: 0.4rem;
   }
-  /* .member-card{
-    background-color: var(--color-white);
-  } */
   .member-card a{
     color: var(--color-white);
   }
@@ -230,7 +228,32 @@ h1 {
   .list-view {
     flex-direction: row;
     align-items: center;
+    margin: 20px 60px;
+    
+    
   }
+  .list-view table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: var(--card-bg);
+}
+
+.list-view th, .list-view td {
+    padding: 10px;
+    border: 1px solid var(--color-black);
+}
+
+.list-view th {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+.list-view a{
+    color: black;
+}
+/* end of list view style */
+
+/* foot style start here */
 
 footer {
     display: grid;
@@ -258,6 +281,7 @@ footer {
     border-radius: 50%;
     color: var(--color-b);
 }
+/* end for footer style in this project */
 @media screen and (max-width: 1200px) {
     #member-container {
         gap: 15px;
@@ -314,6 +338,64 @@ footer {
         padding: 8px 15px;
         font-size: 14px;
       }
+       /* Make the table display as block, adding horizontal scroll */
+    .list-view table {
+        overflow: hidden;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    /* Make table headers hidden and add custom labels for cells */
+    .list-view th {
+        display: none; /* Hide the headers */
+    }
+
+    .list-view td {
+        display: block;
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        border: none;
+        position: relative;
+    }
+
+    /* Add custom labels for each data field */
+    .list-view td::before {
+        content: attr(data-label); /* The label is pulled from the data-label attribute */
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        color: var(--color-white);
+    }
+
+    /* Styling the table rows */
+    .list-view tr {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    /* Styling links */
+    .list-view a {
+        color: var(--color-black);
+        text-decoration: none;
+    }
+
+    /* Optional: Improve readability by giving each td a unique background */
+    .list-view td {
+        background-color: var(--color-gray-200);
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+
+    /* Styling for member images in list view */
+    .list-view td img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+      
 }
 @media screen and (max-width: 480px) {
     .toggle-buttons {

@@ -122,6 +122,99 @@ document.addEventListener("DOMContentLoaded", async () => {
     fetchMembers();
   });
   
+  document.addEventListener("DOMContentLoaded", async () => {
+    const container = document.getElementById("member-container");
+    const gridViewBtn = document.getElementById("grid-view");
+    const listViewBtn = document.getElementById("list-view");
+  
+    // Fetch and display members
+    async function fetchMembers() {
+        try {
+            const response = await fetch("./data/members.json");
+            const members = await response.json();
+            displayMembersAsGrid(members); // Default to grid view
+        } catch (error) {
+            console.error("Error fetching members:", error);
+        }
+    }
+  
+    // Display members as grid
+    function displayMembersAsGrid(members) {
+        container.className = "grid-view";
+        container.innerHTML = ""; // Clear container
+        members.forEach(member => {
+            const memberDiv = document.createElement("div");
+            memberDiv.classList.add("member-card");
+            memberDiv.innerHTML = `
+                <img src="../chamber/images/${member.image}" alt="${member.name}" onerror="this.src='fallback-image.jpg'">
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Website:</strong> <a href="https://${member.url}" target="_blank">${member.url}</a></p>
+                <p><strong>Membership Level:</strong> ${member.membershipLevel}</p>
+            `;
+            container.appendChild(memberDiv);
+        });
+    }
+
+    // Display members as table
+    function displayMembersAsTable(members) {
+        container.className = "list-view";
+        container.innerHTML = `
+            <table border="1" style="width: 100%; border-collapse: collapse; text-align: left;">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Website</th>
+                        <th>Membership Level</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${members
+                        .map(
+                            member => `
+                            <tr>
+                                <td><img src="../chamber/images/${member.image}" alt="${member.name}" style="width: 50px; height: 50px; object-fit: cover;" onerror="this.src='fallback-image.jpg'"></td>
+                                <td>${member.name}</td>
+                                <td>${member.address}</td>
+                                <td>${member.phone}</td>
+                                <td><a href="https://${member.url}" target="_blank">${member.url}</a></td>
+                                <td>${member.membershipLevel}</td>
+                            </tr>`
+                        )
+                        .join("")}
+                </tbody>
+            </table>
+        `;
+    }
+  
+    // Toggle view
+    gridViewBtn.addEventListener("click", async () => {
+        try {
+            const response = await fetch("./data/members.json");
+            const members = await response.json();
+            displayMembersAsGrid(members);
+        } catch (error) {
+            console.error("Error switching to grid view:", error);
+        }
+    });
+
+    listViewBtn.addEventListener("click", async () => {
+        try {
+            const response = await fetch("./data/members.json");
+            const members = await response.json();
+            displayMembersAsTable(members);
+        } catch (error) {
+            console.error("Error switching to list view:", error);
+        }
+    });
+
+    fetchMembers();
+});
+
 
 // year
 const year = document.querySelector("#currentYear");
