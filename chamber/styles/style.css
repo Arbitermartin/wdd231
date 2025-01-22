@@ -290,6 +290,9 @@ footer {
     .footer{
         grid-template-columns: repeat(2,1fr);
     }
+    .list-view table{
+        grid-template-columns: 1fr;
+    }
 
 }
 @media screen and (max-width: 768px) {
@@ -340,7 +343,6 @@ footer {
       }
        /* Make the table display as block, adding horizontal scroll */
     .list-view table {
-        overflow: hidden;
         display: block;
         overflow-x: auto;
         white-space: nowrap;
