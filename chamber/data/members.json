@@ -3,7 +3,7 @@
       "name": "Software company",
       "address": "Head quater, Plot 144, Migombani st",
       "phone": "+255659070100",
-      "url": "https://softnet.co.tz/",
+      "url": "www.softnet.co.tz/",
       "image": "../images/softnet.jpg",
       "membershipLevel": 1
     },
@@ -11,7 +11,7 @@
       "name": "Tembosoft Limited",
       "address": "2nd Floor, Mikumi House, 368 Msasani Road, Oysterbay, 14111 Dar es Salaam, Tanzania",
       "phone": "+255745595692",
-      "url": "https://www.tembosoft.co.tz/",
+      "url": "www.tembosoft.co.tz/",
       "image": "../images/tembosoft.png",
       "membershipLevel": 2
     },
@@ -19,7 +19,7 @@
       "name": "Powersoft Communications Limited",
       "address": "Sam Nujoma Road Mwenge, Dar es Salaam",
       "phone": "+255 746 805 383",
-      "url": "https://pcl.co.tz/",
+      "url": "www.pcl.co.tz/",
       "image": "../images/powersoft.png",
       "membershipLevel": 3
     },
@@ -27,7 +27,7 @@
         "name": "SAFCO",
         "address": "Dodoma City Jimboni, Roma Complex Dodoma, 2796",
         "phone": " +255 747 762 244",
-        "url": "https://www.safco.co.tz/",
+        "url": "www.safco.co.tz/",
         "image": "../images/safco.png",
         "membershipLevel": 3
       },
@@ -35,7 +35,7 @@
         "name": "Oasis Technologies TZ",
         "address": "Mbagala, Dar es salaam Migombani, Unguja, Zanzibar",
         "phone": "+255622929972",
-        "url": "https://www.oasistech.co.tz/",
+        "url": "www.oasistech.co.tz/",
         "image": "../images/oasis.png",
         "membershipLevel": 3
       },
@@ -43,7 +43,7 @@
         "name": "CATS Tanzania",
         "address": "P. O. Box 2569",
         "phone": "+255 22 213 7915",
-        "url": "https://www.catsgroup.co.tz/",
+        "url": "www.catsgroup.co.tz/",
         "image": "../images/cats.png",
         "membershipLevel": 3
       },
@@ -51,7 +51,7 @@
         "name": "Aztek Solutions",
         "address": "The Residence | Mwai Kibaki Road | Dar es Salaam",
         "phone": "+255 769 776 005",
-        "url": "https://www.aztek.co.tz/",
+        "url": "www.aztek.co.tz/",
         "image": "../images/aztek.png",
         "membershipLevel": 3
       },
@@ -59,7 +59,7 @@
         "name": "Bizy Tech Limited",
         "address": "15 Senga Road, Mikocheni A,Dar Es Salaam, Tanzania",
         "phone": "+255 673 333 595",
-        "url": "https://bizytech.com/",
+        "url": "www.bizytech.com/",
         "image": "../images/bizy.png",
         "membershipLevel": 3
       }
