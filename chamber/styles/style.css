@@ -70,12 +70,12 @@ nav {
     width: 200px;
     height: 40px;
     border: none;
-    background-color: var(--color-primary-variant);
+    background-color: var(--color-bg);
     color: var(--color-white);
     border-radius: 0.5rem;
 }
 .container .btn:hover{
-    background-color: var(--color-red);
+    background-color: var(--color-bg);
     color: var(--color-white);
 }
 
@@ -211,6 +211,12 @@ h1 {
   #grid-view{
     border-radius: 0.4rem;
   }
+  /* .member-card{
+    background-color: var(--color-white);
+  } */
+  .member-card a{
+    color: var(--color-white);
+  }
   #list-view{
     border-radius: 0.4rem;
   }
@@ -273,7 +279,7 @@ footer {
         gap: 1rem;
         /* padding: 3rem; */
         text-align: center;
-        background-color: var(--color-primary-variant);
+        background-color: var(--color-bg);
         border-radius: 5px;
         position: absolute;
         top: 20%;
