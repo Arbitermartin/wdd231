@@ -106,7 +106,7 @@ nav {
   }
   
   .cta-button:hover {
-    background-color:  var(--color-primary-variant);
+    background-color:  var(--color-bg);
   }
   /* end of call to action style */
 .container{
