@@ -3,9 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Chamber site for the week 02 which contain my city which i choose and their description of my city  at BYU-IDAHO for WDD231 Web Development Frontend I">
+    <meta name="author" content="Martin Arexander Kasike">
+    <!-- Facebook social media meta tag for my site -->
+    <meta property="og:title" content="Chamber website  by Martin Arexander Kasike week 02">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/Arbitermartin/wdd231/tree/main/chamber/images">
+    <meta property="og:url" content="https://arbitermartin.github.io/wdd231/chamber/directory.html">
+    <!-- FAVICON ICON -->
+    <link rel="icon" href="../chamber/images/favicon.ico">
+    <!-- js and css link -->
+     <link rel="stylesheet" href="../chamber/styles/style.css">
+     <!-- js link -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+     <script src="scripts/directory.js" defer></script>
+     <script src="scripts/member.js" defer></script>
+     
+
+      <!-- BOOTSTRAP LINKS FOR ICON -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Chamber commerce website</title>
 </head>
 <body>
-    hello
+    <nav>
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="../chamber/images/premier.png" alt="logo" loading="lazy" >
+                <div class="content">
+                    <h3>OFFICIAL PREMIER <br> COMMERCE COMPANY</h3>
+                </div>
+            </div>
+            <button class="navbar-toggler" id="toggleButton">
+                <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+            </button>
+            <ul class="nav_links" id="navMenu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Discovery</a></li>
+                <li><a href=""><i class="bi bi-circle-half"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="header_left">
+                    <h2>ABOUT PREMIER COMMERCE COMPANY</h2>
+                    <p>
+                     Premier Commerce Company is a company primarily focused on digital agriculture, which enables farmers to sell their produce directly after harvesting. This facilitates the purchasing of farmers' produce at recommended prices. It also allows farmers to view the names of people applying for jobs, enabling them to hire workers to assist with farming tasks. This solution simplifies the process for job seekers and supports farmers in their work. Since agriculture is the backbone of Tanzania, I decided to develop this solution to assist farmers in general. Thank you, and welcome to our company!</p>
+                    <button class="btn">Read More <i class="bi bi-chevron-double-right"></i></button>
+                    </div>
+            </div>
+        </section>
+        <section>
+            <div class="container_1">
+                <h1>Home</h1>
+                <div class="dashboard">
+                    <div class="card" id="events">
+                        <h2>Events</h2>
+                        <p>No events at the moment.</p>
+                    </div>
+                    <div class="card" id="current-weather">
+                        <h2>Current Weather</h2>
+                        <div id="weather-details">
+                            <!-- Weather details will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    <div class="card" id="weather-forecast">
+                        <h2>Weather Forecast</h2>
+                        <div id="forecast-details">
+                            <!-- Forecast details will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="member-spotlights"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer footer_container">
+            <article>
+                <h2>CONTACT US</h2>
+                <address>
+                    PREMIER COMMERCE COMPANY <br>
+                    P.O.BOX 22, MAKUNGU TANZANIA <br>
+                    MAKUNGU, PLOT 223 <br>
+                    kasikemartin99@gmail.com <br>
+                    +255684640139
+                </address>
+            </article>
+            <article>
+                <h2>SOCIAL MEDIA LINKS</h2>
+                <ul class="social">
+                    <li><a href=""><i class="bi bi-youtube"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+                    <li><a href=""><i class="bi bi-linkedin"></i></a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>ABOUT MY CLASS</h2>
+                <p>
+                    WDD231 Class Project <br>
+                    Martin Kasike <br>
+                    &copy; <span id="currentYear"></span> Martin Kasike, Dar es salaam, Tanzania
+                </p>
+                <p id="lastModified"></p>
+            </article>
+
+        </div>
+       
+</footer>
+     
 </body>
 </html>

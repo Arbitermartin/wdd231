@@ -61,11 +61,18 @@ nav {
   height: 80px;
 }
 .container{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end; 
-    margin: 20px 50px;
+   display: flex;
+   max-width: 700px;
 }
+.header_left{
+    display: block;
+    max-width: 800px;
+    margin: 20px 40px;
+    color: var(--color-white);
+    line-height: 1.5rem;
+    font-size: 16px;
+    font-weight: 700;
+ }
 .container .btn{
     margin: 20px 60px;
     width: 200px;
@@ -121,8 +128,8 @@ nav {
 }
 .container{
     margin-top: 0rem;
-    height: 300px;
-    background: url('../images/maize.jpeg');
+    height: 500px;
+    background: url('../images/maize1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -251,10 +258,84 @@ h1 {
 .list-view a{
     color: black;
 }
-/* end of list view style */
-
-/* foot style start here */
-
+/* General container for the member spotlights */
+#member-spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Individual card styling */
+  .member-card {
+    background-color: var(--color-bg);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Logo Styling */
+  .member-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+  }
+  
+  /* Card Text and Links */
+  .member-card h3 {
+    margin: 10px 0;
+    font-size: 1.25rem;
+    color: var(--color-white);
+  }
+  
+  .member-card p {
+    margin: 5px 0;
+    color: var(--color-white);
+  }
+  
+  .website-link {
+    display: inline-block;
+    margin: 10px 0;
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .website-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Membership badge */
+  .membership-level {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--color-white);
+  }
+  
+  /* Different border colors for membership levels */
+  .member-card.gold {
+    border-left: 5px solid gold;
+  }
+  
+  .member-card.silver {
+    border-left: 5px solid silver;
+  }
+  /*footer style  */
 footer {
     display: grid;
     place-items: center;
@@ -299,6 +380,9 @@ footer {
     .footer{
         grid-template-columns: 1fr;
     }
+    .container{
+        height: 700px;
+    }
     .nav_links {
         display: none;
         flex-direction: column;
@@ -324,14 +408,19 @@ footer {
     .container_1{
         max-width: 400px;
     }
+
     .dashboard {
         flex-direction: column;
     }
-    .container .btn{
+
+    
+    /* .container .btn{
         display: block;
         margin:  0 auto;
         margin-bottom: 2rem;
-    }
+    } */
+     /* container style */
+    
     .member-card {
         width: 80%;
         max-width: 100%;
@@ -397,6 +486,19 @@ footer {
         border-radius: 50%;
         object-fit: cover;
     }
+    #member-spotlights {
+        padding: 20px;
+        margin: 20px 60px;
+      }
+    
+      .member-card {
+        padding: 15px;
+      }
+    
+      .member-logo {
+        width: 80px;
+        height: 80px;
+      }
       
 }
 @media screen and (max-width: 480px) {
