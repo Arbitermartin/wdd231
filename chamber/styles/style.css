@@ -34,6 +34,7 @@ body {
     background-color: var(--color-b);
     
 }
+/* navigation style */
 nav {
     background-color: var(--color-bg);
     padding: 0.3rem;
@@ -44,6 +45,40 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+}
+.nav_links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav_links li a {
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav_links li a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle button styles */
+.navbar-toggler {
+  display: none;
+  background-color: var(--color-b);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.navbar-toggler-icon{
+  font-size: 20px;
+  color: var(--color-white);
 }
 
 .logo img {
@@ -61,6 +96,9 @@ nav {
 .logo img{
   height: 80px;
 }
+/* end of the navigation bar style */
+
+
 /* call to action style */
 /* Call-to-Action Section Styling */
 .cta-section {
@@ -109,6 +147,8 @@ nav {
     background-color:  var(--color-white);
   }
   /* end of call to action style */
+
+  /* style of the hero image */
 .container{
    display: flex;
    max-width: 700px;
@@ -140,41 +180,6 @@ nav {
     margin-top: 1rem;
     color: var(--color-b);
 }
-
-.nav_links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav_links li a {
-    color: var(--color-white);
-    font-size: 18px;
-    font-weight: 700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav_links li a:hover {
-    text-decoration: underline;
-}
-
-/* Toggle button styles */
-.navbar-toggler {
-    display: none;
-    background-color: var(--color-b);
-    border: none;
-    padding: 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    color: var(--color-white);
-}
-.navbar-toggler-icon{
-    font-size: 20px;
-    color: var(--color-white);
-}
 .container{
     margin-top: 0rem;
     height: 500px;
@@ -182,6 +187,9 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* end of this style */
+
+/* style of the home event weather and weather forecasting */
 .container_1 {
     max-width: 1200px;
     margin: auto;
@@ -437,6 +445,7 @@ footer {
         flex-direction: column;
         position: sticky;
         gap: 1rem;
+        margin-top: 1rem;
         /* padding: 3rem; */
         text-align: center;
         background-color: var(--color-bg);
@@ -461,15 +470,6 @@ footer {
     .dashboard {
         flex-direction: column;
     }
-
-    
-    /* .container .btn{
-        display: block;
-        margin:  0 auto;
-        margin-bottom: 2rem;
-    } */
-     /* container style */
-    
     .member-card {
         width: 80%;
         max-width: 100%;
