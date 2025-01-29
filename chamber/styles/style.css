@@ -467,6 +467,11 @@ footer {
     .nav_links li a:hover{
       text-decoration: none;
     }
+    /* header left style */
+    .header_left p{
+      display: block;
+      margin: 0 auto;
+    }
 
     .navbar-toggler {
         display: block;
