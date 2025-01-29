@@ -459,6 +459,14 @@ footer {
     .nav_links.active {
         display: flex;
     }
+    
+    .nav_links li:hover{
+      background-color: var(--color-gray-900);
+      padding: .7rem;
+    }
+    .nav_links li a:hover{
+      text-decoration: none;
+    }
 
     .navbar-toggler {
         display: block;
