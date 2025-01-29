@@ -469,8 +469,7 @@ footer {
     }
     /* header left style */
     .header_left p{
-      display: block;
-      margin: 0 auto;
+     margin: 20px 50px;
     }
 
     .navbar-toggler {
