@@ -1,13 +1,14 @@
 // TOGGLE BUTTON
-document.addEventListener("DOMContentLoaded", () => {
-    const toggleButton = document.getElementById("toggleButton");
-    const navMenu = document.getElementById("navMenu");
-
-    // Toggle the visibility of the nav menu
-    toggleButton.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-    });
+document.getElementById('toggleButton').addEventListener('click', function() {
+    let navMenu = document.getElementById('navMenu');
+    if (navMenu.classList.contains('show')) {
+        this.innerHTML = '<i class="bi bi-list"></i>';
+    } else {
+        this.innerHTML = '<i class="bi bi-x"></i>';
+    }
+    navMenu.classList.toggle('show');
 });
+
 
 // for my country weather
 document.addEventListener("DOMContentLoaded", () => {
