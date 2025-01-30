@@ -483,7 +483,8 @@ footer {
 
   /* btn-1 style */
   .btn-1{
-    padding: 10px 60px;
+    width: 200px;
+    height: 40px;
   }
     /* header left style */
     .header_left p{
@@ -626,7 +627,8 @@ footer {
   font-size: 13px;
 }
 .btn-1 {
-  padding: 6px 12px;
+  width: 200px;
+  height: 40px;
   font-size: 12px;
 }
   /* end of container style */
