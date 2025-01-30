@@ -481,6 +481,10 @@ footer {
   }
   /* end of the nav style  */
 
+  /* btn-1 style */
+  .btn-1{
+    padding: 10px 60px;
+  }
     /* header left style */
     .header_left p{
      margin: 20px 30px;
@@ -621,7 +625,7 @@ footer {
 .header_left p {
   font-size: 13px;
 }
-.btn {
+.btn-1 {
   padding: 6px 12px;
   font-size: 12px;
 }
