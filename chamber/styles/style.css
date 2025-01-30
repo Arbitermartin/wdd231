@@ -137,32 +137,50 @@ body {
   /* end of call to action style */
 
   /* style of the hero image */
-.container{
-   display: flex;
-   max-width: 700px;
-}
-.header_left{
-    display: block;
-    max-width: 800px;
-    margin: 10px 30px;
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
     color: var(--color-white);
-    line-height: 1.5rem;
+    font-size: 30px;
+}
+.header_left {
+    /* background-color: #f4f4f4; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header_left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.header_left p {
     font-size: 16px;
-    font-weight: 700;
- }
-.container .btn{
-    margin: 20px 60px;
-    width: 200px;
-    height: 40px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.btn-1 {
+    display: inline-flex;
+    align-items: center;
+    background: var(--color-bg);
+    color: white;
+    padding: 10px 20px;
     border: none;
-    background-color: var(--color-bg);
-    color: var(--color-white);
-    border-radius: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
 }
-.container .btn:hover{
-    background-color: var(--color-bg);
-    color: var(--color-white);
+.btn-1 i {
+    margin-left: 10px;
 }
+.btn-1:hover {
+    background-color: var(--color-gray-700);
+}
+
 
 .content {
     margin-top: 1rem;
@@ -425,21 +443,34 @@ footer {
     .footer{
         grid-template-columns: 1fr;
     }
-    .container{
-        height: 700px;
-    }
+    /* container style */
+    .header_left h2 {
+      font-size: 24px;
+  }
+  .header_left p {
+      font-size: 14px;
+  }
+  .btn {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+  /* end of container style */
+
   /* nav style start */
+ .nav_bar{
+  padding: 50px;
+ }
     .nav_links {
       display: none;
       flex-direction: column;
       background:  var(--color-bg);
       position: absolute;
-      top: 60px;
+      top: 100%;
       left: 0;
       width: 100%;
       text-align: center;
       padding: 10px 0;
-      margin-top: 5rem;
+      
   }
   .nav_links.show {
       display: flex;
@@ -576,5 +607,22 @@ footer {
   padding: 8px 15px;
   font-size: 14px;
 }
-  
+/* container style */
+.container {
+  padding: 10px;
+}
+.header_left {
+  padding: 15px;
+}
+.header_left h2 {
+  font-size: 20px;
+}
+.header_left p {
+  font-size: 13px;
+}
+.btn {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+  /* end of container style */
 }
