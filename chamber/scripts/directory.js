@@ -1,5 +1,5 @@
 // TOGGLE BUTTON
-document.getElementById('toggleButton').addEventListener('click', function() {
+document.getElementById('toggleButton').addEventListener('click',function(){
     let navMenu = document.getElementById('navMenu');
     if (navMenu.classList.contains('show')) {
         this.innerHTML = '<i class="bi bi-list"></i>';

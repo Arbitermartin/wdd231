@@ -484,7 +484,7 @@ footer {
   /* btn-1 style */
   .btn-1{
     width: 200px;
-    height: 40px;
+   padding: 20px 30px;
   }
     /* header left style */
     .header_left p{
