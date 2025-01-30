@@ -600,6 +600,7 @@ footer {
 }
 .nav_links {
     top: 50px;
+    padding: 10px 0;
     margin: 5px 0px;
 }
 .cta-section {
