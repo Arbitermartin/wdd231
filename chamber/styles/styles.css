@@ -166,15 +166,28 @@ input, select, textarea {
     }
 }
 @media screen and (max-width:768px) {
-    .conatiner_fluid{
-        display: block;
-        margin: 20px 40px;
-    }
-    .header_left img{
-        display: block;
-        margin: 10px 40px;
-        width: 300px;
-    }
+ 
+        .container_fluid {
+            padding: 10px;
+        }
+    
+        .header_left img {
+            max-width: 100%;
+        }
+    
+        form {
+            width: 100%;
+        }
+    
+        label {
+            display: block;
+            margin-bottom: 15px;
+        }
+    
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+        }
     .memberships {
        margin: 20px 60px;
     }
@@ -182,25 +195,31 @@ input, select, textarea {
         width: 90%;
     }
 }
-@media screen and (min-width:768px) {
-    .header_left img{
-        display: block;
-        margin: 20px 40px;
-    }
-        
-}
 @media screen and (max-width:320px){
     .conatiner_fluid{
-        display: block;
-        margin: 20px 30px;
+        margin: 0px 40px;
+    }
+    .header_right h1 {
+        font-size: 18px;
+    }
+
+    form {
+        width: 100%;
+        padding: 5px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
     }
     .memberships{
         margin: 20px 30px;
     }
-    .header_left img{
-        display: block;
-        width: 200px;
-    }
+  
     h1 {
         font-size: 18px;
     }
