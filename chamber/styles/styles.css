@@ -219,8 +219,7 @@ input, select, textarea {
 @media screen and (max-width:768px) {
  
         .container_fluid {
-            padding: 10px;
-            margin: 20px 60px;
+            padding: 30px;
         }
     
         .header_left img {
