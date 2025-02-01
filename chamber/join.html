@@ -39,7 +39,7 @@
                     <h3> PREMIER COMMERCE COMPANY</h3>
                 </div>
             </div>
-            <button class="navbar-toggler" id="toggleButton">
+            <button class="navbar-toggler" id="toggleButton" aria-label="this is toggle button">
                 <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
             </button>
             <ul class="nav_links" id="navMenu">
@@ -123,38 +123,39 @@
             <div class="memberships">
                 <div class="card_member" id="np">
                     <h2>np Membership</h2>
-                    <button class="openButton" class="btn-3">Read more</button>
+                    <button class="openButton btn_3">Read more</button>
                     <dialog class="dialogBox">
                       <p>Lorem ipsum dolor sit.</p>
                         <button class="closeButton">close</button>
                     </dialog>
                 </div>
                 <div class="card_member" id="np">
-                    <h2>np Membership</h2>
-                    <button class="openButton" class="btn-2">Read more</button>
-                    <dialog class="dialogBox">
+                    <h2>Bronze Membership</h2>
+                    <button class="openButton_1 btn_3">Read more</button>
+                    <dialog class="dialogBox hero">
                       <p>Lorem ipsum dolor sit.</p>
-                        <button class="closeButton">close</button>
+                        <button class="closeButton_1">close</button>
                     </dialog>
                 </div>
                 <div class="card_member" id="np">
-                    <h2>np Membership</h2>
-                    <button class="openButton">Read more</button>
+                    <h2>Silver Membership</h2>
+                    <button class="openButton_2 btn_3">Read more</button>
                     <dialog class="dialogBox">
                       <p>Lorem ipsum dolor sit.</p>
-                        <button class="closeButton">close</button>
+                        <button class="closeButton_2">close</button>
                     </dialog>
                 </div>
                 <div class="card_member" id="np">
-                    <h2>np Membership</h2>
-                    <button class="openButton">Read more</button>
+                    <h2>Gold Membership</h2>
+                    <button class="openButton_3 btn_3">Read more</button>
                     <dialog class="dialogBox">
                       <p>Lorem ipsum dolor sit.</p>
-                        <button class="closeButton">close</button>
+                        <button class="closeButton_3">close</button>
                     </dialog>
                 </div>
             </div>
         </section>
+        
         
     </main>
     <footer>
@@ -195,14 +196,7 @@
     function openModal(id) {
         document.getElementById(id).style.display = 'block';
     }
-const openButton =document.querySelector(".openButton");
-const dialogBox =document.querySelector(".dialogBox");
-const closeButton =document.querySelector(".closeButton");
 
-openButton.addEventListener("click",()=>{
-    dialogBox.showModel();
-
-});
 </script>
      
 </body>
