@@ -156,7 +156,7 @@ input, select, textarea {
 .closeButton,.closeButton_1,.closeButton_2,.closeButton_3 {
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: red;
+    background-color: var(--color-gray-700);
     color: white;
     border: none;
     border-radius: 5px;
@@ -164,16 +164,9 @@ input, select, textarea {
 }
 
 .closeButton:hover {
-    background-color: darkred;
+    background-color: var(--color-gray-700);
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
-    .dialogBox {
-        width: 95%;
-        bottom: 5px;
-    }
-}
 
  /* Thank You Page Styles */
 .thank-you-container {
@@ -252,6 +245,9 @@ input, select, textarea {
     }
     .thank-you-container {
         width: 90%;
+    }
+    .btn_3{
+        width: 200px;
     }
 }
 @media screen and (max-width:320px){
