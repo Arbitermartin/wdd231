@@ -182,6 +182,13 @@ input, select, textarea {
         width: 90%;
     }
 }
+@media screen and (min-width:768px) {
+    .header_left img{
+        display: block;
+        margin: 20px 40px;
+    }
+        
+}
 @media screen and (max-width:320px){
     .conatiner_fluid{
         display: block;
