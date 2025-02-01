@@ -195,6 +195,14 @@
     function openModal(id) {
         document.getElementById(id).style.display = 'block';
     }
+const openButton =document.querySelector(".openButton");
+const dialogBox =document.querySelector(".dialogBox");
+const closeButton =document.querySelector(".closeButton");
+
+openButton.addEventListener("click",()=>{
+    dialogBox.showModel();
+
+});
 </script>
      
 </body>
