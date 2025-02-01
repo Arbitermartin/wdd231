@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamber site for the week 02 which contain my city which i choose and their description of my city  at BYU-IDAHO for WDD231 Web Development Frontend I">
+    <meta name="author" content="Martin Arexander Kasike">
+    <!-- Facebook social media meta tag for my site -->
+    <meta property="og:title" content="Chamber website  by Martin Arexander Kasike week 02">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://github.com/Arbitermartin/wdd231/tree/main/chamber/images">
+    <meta property="og:url" content="https://arbitermartin.github.io/wdd231/chamber/directory.html">
+    <!-- FAVICON ICON -->
+    <link rel="icon" href="../chamber/images/favicon.ico">
+    <!-- js and css link -->
+     <link rel="stylesheet" href="../chamber/styles/style.css">
+     <link rel="stylesheet" href="../chamber/styles/styles.css">
+     <!-- js link -->
+     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+     <script src="scripts/directory.js" defer></script>
+     <script src="../chamber/scripts/join.js" defer></script>
+     
+
+      <!-- BOOTSTRAP LINKS FOR ICON -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Chamber commerce website</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_bar">
+            <div class="logo">
+                <img src="../chamber/images/premier.png" alt="logo" loading="lazy" >
+                <div class="content">
+                    <h3> PREMIER COMMERCE COMPANY</h3>
+                </div>
+            </div>
+            <button class="navbar-toggler" id="toggleButton">
+                <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+            </button>
+            <ul class="nav_links" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="">Discovery</a></li>
+                <li><a href=""><i class="bi bi-circle-half"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="join">
+                <h2>Home/Page /Join</h2>
+                <p>Join Page</p>
+            </div>
+        </section>
+        <section>
+            <div class="conatiner_fluid">
+                <div class="header_left">
+                    <img src="../chamber/images/maize1.jpg" alt="" width="600px" loading="lazy">
+                </div>
+                <div class="header_right">
+                    <h1>Join Our Chamber</h1>
+                    <form action="thankyou.html" method="get">
+                        <label>
+                            First Name: 
+                            <input type="text" name="first-name" title="First Name" autocomplete="given-name" required>
+                        </label>
+                        
+                        <label>
+                            Last Name: 
+                            <input type="text" name="last-name" title="Last Name" autocomplete="family-name" required>
+                        </label>
+                        
+                        <label>
+                            Organizational Title: 
+                            <input type="text" name="organization-title" title="Organization Title" autocomplete="organization-title" 
+                            pattern="^[A-Za-z\-\s]{7,}$">
+                        </label>
+                        
+                        <label>
+                            Email: 
+                            <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
+                        </label>
+                        
+                        <label>
+                            Mobile Phone: 
+                            <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+                        </label>
+                        
+                        <label>
+                            Business/Organization Name: 
+                            <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+                        </label>
+                        
+                        <label>
+                            Membership Level:
+                            <select name="membership" required>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        
+                        <label>
+                            Business Description:
+                            <textarea name="description" title="Business Description"></textarea>
+                        </label>
+                        
+                        <input type="hidden" name="timestamp" id="timestamp">
+                        
+                        <button type="submit" class="btn-2" aria-label="welcome">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="memberships">
+                <div class="card_member" id="np">
+                    <h2>np Membership</h2>
+                    <button class="openButton" class="btn-3">Read more</button>
+                    <dialog class="dialogBox">
+                      <p>Lorem ipsum dolor sit.</p>
+                        <button class="closeButton">close</button>
+                    </dialog>
+                </div>
+                <div class="card_member" id="np">
+                    <h2>np Membership</h2>
+                    <button class="openButton" class="btn-2">Read more</button>
+                    <dialog class="dialogBox">
+                      <p>Lorem ipsum dolor sit.</p>
+                        <button class="closeButton">close</button>
+                    </dialog>
+                </div>
+                <div class="card_member" id="np">
+                    <h2>np Membership</h2>
+                    <button class="openButton">Read more</button>
+                    <dialog class="dialogBox">
+                      <p>Lorem ipsum dolor sit.</p>
+                        <button class="closeButton">close</button>
+                    </dialog>
+                </div>
+                <div class="card_member" id="np">
+                    <h2>np Membership</h2>
+                    <button class="openButton">Read more</button>
+                    <dialog class="dialogBox">
+                      <p>Lorem ipsum dolor sit.</p>
+                        <button class="closeButton">close</button>
+                    </dialog>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footer footer_container">
+            <article>
+                <h2>CONTACT US</h2>
+                <address>
+                    PREMIER COMMERCE COMPANY <br>
+                    P.O.BOX 22, MAKUNGU TANZANIA <br>
+                    MAKUNGU, PLOT 223 <br>
+                    kasikemartin99@gmail.com <br>
+                    +255684640139
+                </address>
+            </article>
+            <article>
+                <h2>SOCIAL MEDIA LINKS</h2>
+                <ul class="social">
+                    <li><a href=""><i class="bi bi-youtube" aria-label="read more about my youtube account"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter-x" aria-label="read more about my twitter account"></i></a></li>
+                    <li><a href=""><i class="bi bi-linkedin" aria-label="read more about my linkedin account"></i></a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>ABOUT MY CLASS</h2>
+                <p>
+                    WDD231 Class Project <br>
+                    Martin Kasike <br>
+                    &copy; <span id="currentYear"></span> Martin Kasike, Dar es salaam, Tanzania
+                </p>
+                <p id="lastModified"></p>
+            </article>
+
+        </div>
+       
+</footer>
+     
+</body>
+</html>

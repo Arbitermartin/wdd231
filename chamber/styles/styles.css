@@ -1,0 +1,206 @@
+:root{
+    --primary-color: #6f6af8;
+    --color-primary-light: hsl(242,91%,69%,18%);
+    --color-primary-variant: #5854c7;
+    --color-red:#da0f3f;
+    --secondary-color:#1A659E;
+    --premier-color: #FF6B35;
+    --color-first:red;
+    --mporipori-color: #333333;
+    --color-red-light: hsla(346, 87%, 37%, 15%);
+    --color-green: #00c476;
+    --color-green-light: hsl(156,100%,38%,15%);
+    --color-bg: #0f0f3e;
+    --color-gray-900: #1e1e66;
+    --color-gray-700: #2d2b7c;
+    --color-gray-300: rgba(242,242,254,0.3);
+    --color-gray-200: rgba(242,242,242,0.7);
+    --color-white:#f2f2fe;
+    --color-light: #055864;
+    --color-b: #f2f1ec;
+    --color-black: #000;
+}
+
+/* join style */
+.join{
+    background-image: url("/chamber/images/maize1.jpg");
+    height: 100px;
+    text-align: center;
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 800;
+}
+.conatiner_fluid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px 60px;
+    padding: 2rem;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-2{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--color-gray-700);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-2:hover {
+    background-color: var(--color-gray-700);
+}
+ /* Membership Cards  */
+.memberships{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.card_member {
+    background: var(--color-bg);
+    color: var(--color-white);
+    margin: 10px;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    /* min-width: 200px; */
+    transition: transform 0.3s ease-in-out;
+}
+
+.card_member:hover {
+    transform: scale(1.05);
+}
+.card_member.btn-3{
+    background-color: var(--color-gray-700);
+}
+
+/* .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+} */
+ /* Thank You Page Styles */
+.thank-you-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-data {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.form-data p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+@media screen and (max-width:1200px){
+    .conatiner_fluid{
+        grid-template-columns: 1fr;
+    }
+    .header_left img{
+        display: block;
+        margin: 0 auto;
+        padding: 3rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .conatiner_fluid{
+        display: block;
+        margin: 20px 40px;
+    }
+    .header_left img{
+        display: block;
+        width: 300px;
+    }
+    .memberships {
+        flex-direction: column;
+        align-items: center;
+    }
+    .thank-you-container {
+        width: 90%;
+    }
+}
+@media screen and (max-width:320px){
+    .conatiner_fluid{
+        display: block;
+        margin: 20px 30px;
+    }
+    .header_left img{
+        display: block;
+        width: 200px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    input, select, textarea {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+    .thank-you-container {
+        padding: 15px;
+    }
+}
