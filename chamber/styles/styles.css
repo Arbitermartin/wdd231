@@ -172,11 +172,11 @@ input, select, textarea {
     }
     .header_left img{
         display: block;
+        margin: 10px 40px;
         width: 300px;
     }
     .memberships {
-        flex-direction: column;
-        align-items: center;
+       margin: 20px 60px;
     }
     .thank-you-container {
         width: 90%;
@@ -185,6 +185,9 @@ input, select, textarea {
 @media screen and (max-width:320px){
     .conatiner_fluid{
         display: block;
+        margin: 20px 30px;
+    }
+    .memberships{
         margin: 20px 30px;
     }
     .header_left img{
