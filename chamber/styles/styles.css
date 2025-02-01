@@ -220,6 +220,7 @@ input, select, textarea {
  
         .container_fluid {
             padding: 10px;
+            margin: 20px 60px;
         }
     
         .header_left img {
