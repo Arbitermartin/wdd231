@@ -23,7 +23,7 @@
 
 /* join style */
 .join{
-    background-image: url("/chamber/images/maize1.jpg");
+    background-image: url("../images/maize1.jpg");
     height: 100px;
     text-align: center;
     color: var(--color-black);
