@@ -33,9 +33,7 @@
     }
 
     .card {
-        width: 90%;
-        margin: 0 auto;
-        height: auto;
+       grid-template-columns: repeat(2,1fr);
     }
     .card img {
         width: 100%;
