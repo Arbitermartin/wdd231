@@ -1,0 +1,61 @@
+/* Media Queries */
+@media (min-width: 1025px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+    }
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .card img:hover {
+        transform: scale(1.1);
+    }
+    
+}
+
+@media (max-width: 640px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8";
+    }
+
+    .card {
+        width: 95%;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .card figure img {
+        height: 120px;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+}

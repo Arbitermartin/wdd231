@@ -1,0 +1,53 @@
+{
+"places":[
+    {
+      "name": "Serengeti National Park - Safari Experience",
+      "address": "Serengeti National Park, Tanzania",
+      "description": "Witness the Great Migration, where millions of wildebeest and zebras migrate across the vast plains. Spot lions, cheetahs, and other wildlife in their natural habitat.",
+      "image": "images/serengeti.webp"
+    },
+    {
+      "name": "Mount Kilimanjaro - Climbing Adventure",
+      "address": "Kilimanjaro National Park, Tanzania",
+      "description": "Climb Africa’s tallest mountain and enjoy breathtaking views from the summit. A challenging yet rewarding experience for adventurers.",
+      "image": "images/kilimanjaro.webp"
+    },
+    {
+      "name": "Zanzibar - Beach Relaxation & Culture",
+      "address": "Zanzibar, Tanzania",
+      "description": "Relax on pristine white sand beaches, explore Stone Town’s rich history, and experience spice tours on this tropical island.",
+      "image": "images/zanzibar.webp"
+    },
+    {
+      "name": "Ngorongoro Crater - Wildlife Viewing",
+      "address": "Ngorongoro Conservation Area, Tanzania",
+      "description": "A UNESCO site with a high density of wildlife, including the endangered black rhino. Perfect for a one-day safari experience.",
+      "image": "images/ngorongoro.webp"
+    },
+    {
+      "name": "Tarangire National Park - Elephant Paradise",
+      "address": "Tarangire National Park, Tanzania",
+      "description": "Famous for its large elephant herds and scenic baobab trees, this park is a great place to see diverse wildlife and birds.",
+      "image": "images/tarangire.webp"
+    },
+    {
+      "name": "Mafia Island - Snorkeling & Diving",
+      "address": "Mafia Island, Tanzania",
+      "description": "A paradise for scuba divers and snorkelers, known for its vibrant coral reefs and whale shark sightings.",
+      "image": "images/mafia.webp"
+    },
+    {
+      "name": "Dar es Salaam - Cultural & City Life",
+      "address": "Dar es Salaam, Tanzania",
+      "description": "Tanzania’s largest city, filled with markets, historical sites, museums, and a lively waterfront.",
+      "image": "images/dar.webp"
+    },
+    {
+      "name": "Gombe Stream National Park - Chimpanzee Trekking",
+      "address": "Gombe Stream National Park, Tanzania",
+      "description": "A remote park made famous by Jane Goodall, where you can trek through forests and observe wild chimpanzees up close.",
+      "image": "images/chipa.webp"
+    }
+  ]
+  
+}
