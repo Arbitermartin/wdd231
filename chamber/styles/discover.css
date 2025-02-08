@@ -29,8 +29,6 @@
 }
 body {
     font-family: "Roboto", sans-serif;
-    background-color: var(--color-b);
-    
 }
 /* navigation style */
 .nav_bar {
@@ -123,7 +121,8 @@ footer {
   #visit-message {
     margin: 15px;
     padding: 10px;
-    background: #fff;
+    background: var(--color-bg);
+    color: var(--color-white);
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -135,6 +134,7 @@ footer {
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  
     gap: 20px;
     padding: 20px;
     grid-template-areas:
@@ -144,10 +144,11 @@ main {
 
 /* Card Styles */
 .card {
-    background-color: white;
+    background-color: var(--color-bg);
     padding: 10px;
+    margin: 20px 60px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     transition: transform 0.3s ease;
     overflow: hidden;
 }
@@ -182,7 +183,7 @@ main {
 }
 
 .card button {
-    background-color: #28a745;
+    background-color: var(--color-bg);
     color: white;
     border: none;
     padding: 10px;
@@ -192,9 +193,9 @@ main {
 }
 
 .card button:hover {
-    background-color: #218838;
+    background-color: var(--color-gray-700);
 }
-h2{
+h1{
     text-align: center;
 }
 
