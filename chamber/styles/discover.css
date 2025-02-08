@@ -181,20 +181,6 @@ main {
     margin-top: 10px;
     margin-bottom: 15px;
 }
-
-.card button {
-    background-color: var(--color-bg);
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.card button:hover {
-    background-color: var(--color-gray-700);
-}
 h1{
     text-align: center;
 }
@@ -210,6 +196,7 @@ h1{
     .footer{
         grid-template-columns: 1fr;
     }
+   
      /* nav style start */
  .nav_bar{
     padding: 50px;
