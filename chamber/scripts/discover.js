@@ -74,6 +74,7 @@ fetch('./data/places.json')
     .catch(error => {
         console.error("Error fetching the attractions data:", error);
     });
+   
 
 // year
 const year = document.querySelector("#currentYear");
