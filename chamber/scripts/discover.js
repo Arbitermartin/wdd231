@@ -60,8 +60,7 @@ fetch('./data/places.json')
             card.style.gridArea = `card${index + 1}`;
             
             card.innerHTML = `
-             <h1>${attraction.name}</h1>
-                <h2>${attraction.name}</h2>
+                <h1>${attraction.name}</h1>
                
                 <figure>
                     <img src="${attraction.image}" alt="${attraction.name}">
