@@ -63,7 +63,7 @@ fetch('./data/places.json')
                 <h1>${attraction.name}</h1>
                
                 <figure>
-                    <img src="${attraction.image}" alt="${attraction.name}">
+                    <img src="${attraction.image}" alt="${attraction.name}" loading="lazy">
                 </figure>
                 <address>${attraction.address}</address>
                 <p>${attraction.description}</p>
