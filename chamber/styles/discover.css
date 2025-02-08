@@ -31,14 +31,28 @@ body {
     font-family: "Roboto", sans-serif;
 }
 /* navigation style */
+
 .nav_bar {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
     background-color: var(--color-bg);
-    padding: 10px 20px;
+}
+
+.navbar-toggler {
     position: relative;
-  }
+    z-index: 10; /* Ensure it stays in front of other content */
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar-toggler .bi-list {
+    font-size: 2rem;
+}
   .logo {
     display: flex;
     align-items: center;
@@ -196,7 +210,9 @@ h1{
     .footer{
         grid-template-columns: 1fr;
     }
-   
+    .navbar-toggler {
+        z-index: 2; /* Make sure it's always in front */
+    }
      /* nav style start */
  .nav_bar{
     padding: 50px;

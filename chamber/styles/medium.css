@@ -1,3 +1,26 @@
+:root{
+    --primary-color: #6f6af8;
+    --color-primary-light: hsl(242,91%,69%,18%);
+    --color-primary-variant: #5854c7;
+    --color-red:#da0f3f;
+    --secondary-color:#1A659E;
+    --premier-color: #FF6B35;
+    --color-first:red;
+    --mporipori-color: #333333;
+    --color-red-light: hsla(346, 87%, 37%, 15%);
+    --color-green: #00c476;
+    --color-green-light: hsl(156,100%,38%,15%);
+    --color-bg: #0f0f3e;
+    --color-gray-900: #1e1e66;
+    --color-gray-700: #2d2b7c;
+    --color-gray-300: rgba(242,242,254,0.3);
+    --color-gray-200: rgba(242,242,242,0.7);
+    --color-white:#f2f2fe;
+    --color-light: #055864;
+    --color-b: #f2f1ec;
+    --color-black: #000;
+}
+
 /* Media Queries */
 @media (min-width: 1025px) {
     main {
@@ -58,4 +81,27 @@
     .card p {
         font-size: 0.8rem;
     }
+    .nav_links {
+        display: none; /* Hide the menu by default on small screens */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        margin-top: 4rem;
+        left: 0;
+        background-color: var();
+        z-index: 1; /* Ensure links are behind the toggle button */
+    }
+
+    .nav_links.show {
+        display: flex;
+    }
+
+    /* Style the toggle button to ensure it stays in front */
+    .navbar-toggler {
+        z-index: 2; /* Make sure it's always in front */
+        
+    }
 }
+
