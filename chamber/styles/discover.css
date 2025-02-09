@@ -225,8 +225,12 @@ h1{
         z-index: 2; /* Make sure it's always in front */
     }
      /* nav style start */
+     main {
+        z-index: 2; /* Make sure it's always in front */
+        
+    }
  .nav_bar{
-    padding: 50px;
+    padding: 25px;
    }
       .nav_links {
         display: none;
