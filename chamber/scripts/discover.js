@@ -67,6 +67,7 @@ fetch('./data/places.json')
                 </figure>
                 <address>${attraction.address}</address>
                 <p>${attraction.description}</p>
+                  <a href="#" class="learn-more-btn">Learn More</a>
                
             `;
             mainContainer.appendChild(card);
