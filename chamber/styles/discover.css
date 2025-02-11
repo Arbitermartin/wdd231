@@ -210,15 +210,15 @@ h1{
 
 .learn-more-btn {
     display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-black);
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 10px;
 }
 .learn-more-btn:hover {
-    background-color: var(--color-primary-variant);
+    background-color: var(--color-white);
 }
 /* end for footer style in this project */
 @media screen and (max-width: 1200px) {
