@@ -88,7 +88,6 @@
         top: 50px;
         margin-top: 4rem;
         left: 0;
-        background-color: var();
         z-index: 1; /* Ensure links are behind the toggle button */
     }
 
