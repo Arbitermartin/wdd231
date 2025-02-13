@@ -479,6 +479,76 @@ button {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 /* end of gallery */
+/* Thank You Page Styles */
+.thank-you-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.thank-container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 90%;
+  animation: slideUp 0.7s ease-in-out;
+}
+
+.thank-container h2 {
+  color: #ff4500;
+  margin-bottom: 15px;
+}
+
+.thank-container p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#userDetails {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+#userDetails li {
+  background: #f5f5f5;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-back {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-back:hover {
+  background-color: #e03e00;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
  /*footer style  */
  footer {
     display: grid;
