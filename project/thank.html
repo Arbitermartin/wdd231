@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section class="thank-you-section">
+        <div class="container">
+            <h2>Thank You for Contacting Us!</h2>
+            <p>Your submitted details:</p>
+            <ul id="userDetails"></ul>
+            <a href="contact.html" class="btn-submit">Go Back</a>
+        </div>
+    </section>
+
+    <script>
+        // Retrieve and display user data from URL
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            let details = "";
+            params.forEach((value, key) => {
+                details += `<li><strong>${key.replace("-", " ")}:</strong> ${decodeURIComponent(value)}</li>`;
+            });
+            document.getElementById("userDetails").innerHTML = details;
+        }
+        window.onload = getQueryParams;
+    </script>
+
+</body>
+</html>

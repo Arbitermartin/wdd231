@@ -21,6 +21,16 @@
    
 </head>
 <body>
+    <!-- Preloader Section -->
+<div id="preloader">
+    <div class="loader"></div>
+    <p>Loading...</p>
+</div>
+
+<!-- Main Website Content -->
+<div id="content" class="hidden">
+    <!-- Your website content goes here -->
+</div>
     <header>
         <nav>
             <div class="nav_bar">
@@ -43,38 +53,83 @@
             </div>
         </nav>
     </header>
-    <section>
-       
-    </section>
-<section id="menu">
-    <div class="menu_container">
+    <div class="join">
         <p>lorem</p>
     </div>
-    <h2>Our Menu</h2>
-    <div class="menu-item">
-        <h3>Burger</h3>
-        <p>Delicious grilled burger with fresh ingredients.</p>
-        <span>$5.99</span>
-        <button onclick="addToCart('Burger', 5.99)">Add to Cart</button>
+    <section>
+        <!-- Product Section -->
+    <div class="container_1">
+        <h2>Welcome to our food add cart page. </h2>
+        <div class="products">
+            <div class="product">
+                <img src="/project/images/food.webp" alt="Burger">
+                <h3>Burger</h3>
+                <p>$5.00</p>
+                <button onclick="addToCart('Burger', 5.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="/project/images/food.webp" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>$8.00</p>
+                <button onclick="addToCart('Pizza', 8.00)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="/project/images/food.webp" alt="Pasta">
+                <h3>Pasta</h3>
+                <p>$7.00</p>
+                <button onclick="addToCart('Pasta', 7.00)">Add to Cart</button>
+            </div>
+        </div>
     </div>
-    <div class="menu-item">
-        <h3>Pizza</h3>
-        <p>Cheesy and tasty pizza with various toppings.</p>
-        <span>$8.99</span>
-        <button onclick="addToCart('Pizza', 8.99)">Add to Cart</button>
+
+    <!-- Cart Section -->
+    <div class="cart-container">
+        <h2>Your Cart</h2>
+        <ul id="cart-list"></ul>
+        <p>Total: <span id="cart-total">$0.00</span></p>
+        <button id="place-order-btn" onclick="placeOrder()">Place Order</button>
     </div>
-</section>
 
-<section id="cart">
-    <h2>Your Cart</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: $<span id="total">0.00</span></p>
-</section>
+    <!-- Thank You Message (Hidden Initially) -->
+    <div id="thank-you" class="hidden">
+        <h2>Thank You for Your Order!</h2>
+        <p>Your order details:</p>
+        <ul id="order-details"></ul>
+    </div>
+    </section>
+    <footer>
+        <div class="footer footer_container">
+            <article>
+                <h2>Contact Us</h2>
+                <address>
+                    RESTAURANT FOOD SYSTEM <br>
+                    P.O.BOX 22, MAKUNGU TANZANIA <br>
+                    MAKUNGU, PLOT 223 <br>
+                    kasikemartin99@gmail.com <br>
+                    +255684640139
+                </address>
+            </article>
+            <article>
+                <h2>Social Media Links</h2>
+                <ul class="social">
+                    <li><a href=""><i class="bi bi-youtube" aria-label="read more about my youtube account"></i></a></li>
+                    <li><a href=""><i class="bi bi-twitter-x" aria-label="read more about my twitter account"></i></a></li>
+                    <li><a href=""><i class="bi bi-linkedin" aria-label="read more about my linkedin account"></i></a></li>
+                </ul>
+            </article>
+            <article>
+                <h2>Support Links</h2>
+                <ul class="links" style="list-style: none;">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Menu Page</a></li>
+                    &copy; <span id="currentYear"></span> Martin Kasike, Dar es salaam, Tanzania
+                </ul>
+                <p id="lastModified"></p>
+            </article>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@restaurant.com</p>
-    <p>Phone: +123456789</p>
-</section>
+        </div>
+       
+</footer>
 </body>
 </html>

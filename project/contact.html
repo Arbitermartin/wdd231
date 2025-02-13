@@ -20,6 +20,16 @@
    
 </head>
 <body>
+    <!-- Preloader Section -->
+<div id="preloader">
+    <div class="loader"></div>
+    <p>Loading...</p>
+</div>
+
+<!-- Main Website Content -->
+<div id="content" class="hidden">
+    <!-- Your website content goes here -->
+</div>
     <header>
         <nav>
             <div class="nav_bar">
@@ -48,69 +58,91 @@
                 <h2>Home/Page /Join</h2>
                 <p>Join Page</p>
             </div>
-        </section>
-        <section>
-            <div class="conatiner_fluid">
-                <div class="header_left">
-                    <img src="./images/home.jpg" alt="image" width="600" loading="lazy">
+            <section class="contact-section">
+                <div class="container_2">
+                    <div class="contact-form">
+                        <h2>Contact Us</h2>
+                        <form id="contactForm" action="thank.html" method="get">
+                            <label>
+                                Full Name:
+                                <input type="text" name="full-name" required>
+                            </label>
+        
+                            <label>
+                                Email:
+                                <input type="email" name="email" required>
+                            </label>
+        
+                            <label>
+                                Phone:
+                                <input type="tel" name="phone" required>
+                            </label>
+        
+                            <label>
+                                Message:
+                                <textarea name="message" required></textarea>
+                            </label>
+        
+                            <input type="hidden" name="timestamp" id="timestamp">
+        
+                            <button type="submit" class="btn-submit">Send Message</button>
+                        </form>
+                    </div>
+        
+                    <div class="contact-details">
+                        <h2>Our Contact Info</h2>
+                        <div class="contact-card">
+                            <p><strong>Email:</strong> kasikemartin99@gmail.com</p>
+                            <p><strong>Phone:</strong> +255 684640139</p>
+                        </div>
+                        <div class="google-map">
+                            <h3>Our Location</h3>
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093155!2d144.95373531531785!3d-37.81627917975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f5f2b1%3A0xa0e47f9fd7289b19!2sMelbourne%20CBD%2C%20VIC%2C%20Australia!5e0!3m2!1sen!2sus!4v1618885285444!5m2!1sen!2sus" 
+                                width="100%" 
+                                height="250" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
-                <div class="header_right">
-                    <h1>Join Our Chamber</h1>
-                    <form action="thankyou.html" method="get">
-                        <label>
-                            First Name: 
-                            <input type="text" name="first-name" title="First Name" autocomplete="given-name" required>
-                        </label>
-                        
-                        <label>
-                            Last Name: 
-                            <input type="text" name="last-name" title="Last Name" autocomplete="family-name" required>
-                        </label>
-                        
-                        <label>
-                            Organizational Title: 
-                            <input type="text" name="organization-title" title="Organization Title" autocomplete="organization-title" 
-                            pattern="^[A-Za-z\-\s]{7,}$">
-                        </label>
-                        
-                        <label>
-                            Email: 
-                            <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="example@domain.com" required>
-                        </label>
-                        
-                        <label>
-                            Mobile Phone: 
-                            <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
-                        </label>
-                        
-                        <label>
-                            Business/Organization Name: 
-                            <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
-                        </label>
-                        
-                        <label>
-                            Membership Level:
-                            <select name="membership" required>
-                                <option value="" disabled selected>Select membership type</option>
-                                <option value="non-profit">NP Membership</option>
-                                <option value="bronze">Bronze Membership</option>
-                                <option value="silver">Silver Membership</option>
-                                <option value="gold">Gold Membership</option>
-                            </select>
-                        </label>
-                        
-                        <label>
-                            Business Description:
-                            <textarea name="description" title="Business Description"></textarea>
-                        </label>
-                        
-                        <input type="hidden" name="timestamp" id="timestamp">
-                        
-                        <button type="submit" class="btn-2" aria-label="welcome">Submit</button>
-                    </form>
-                </div>
+            </section>
+        <footer>
+            <div class="footer footer_container">
+                <article>
+                    <h2>Contact Us</h2>
+                    <address>
+                        RESTAURANT FOOD SYSTEM <br>
+                        P.O.BOX 22, MAKUNGU TANZANIA <br>
+                        MAKUNGU, PLOT 223 <br>
+                        kasikemartin99@gmail.com <br>
+                        +255684640139
+                    </address>
+                </article>
+                <article>
+                    <h2>Social Media Links</h2>
+                    <ul class="social">
+                        <li><a href=""><i class="bi bi-youtube" aria-label="read more about my youtube account"></i></a></li>
+                        <li><a href=""><i class="bi bi-twitter-x" aria-label="read more about my twitter account"></i></a></li>
+                        <li><a href=""><i class="bi bi-linkedin" aria-label="read more about my linkedin account"></i></a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h2>Support Links</h2>
+                    <ul class="links" style="list-style: none;">
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu Page</a></li>
+                        &copy; <span id="currentYear"></span> Martin Kasike, Dar es salaam, Tanzania
+                    </ul>
+                    <p id="lastModified"></p>
+                </article>
+    
             </div>
-        </section>
+           
+    </footer>
     </main>
     </body>
     </html

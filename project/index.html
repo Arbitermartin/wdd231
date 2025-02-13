@@ -14,12 +14,23 @@
      <!-- end of bootstrap icon -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
 </head>
 <body>
+<!-- Preloader Section -->
+<div id="preloader">
+    <div class="loader"></div>
+    <p>Loading...</p>
+</div>
+
+<!-- Main Website Content -->
+<div id="content" class="hidden">
+    <!-- Your website content goes here -->
+</div>
+
     <header>
         <nav>
             <div class="nav_bar">
@@ -42,6 +53,8 @@
             </div>
         </nav>
     </header>
+  
+    
     <main>
       <section>
         <div class="container">
@@ -51,14 +64,18 @@
             <div class="header_right">
                 <h2>welcome to our Restaurant ordersytem.</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi iure totam tempore? Exercitationem totam molestias quae eum blanditiis impedit labore, magni vero modi, dolorem harum. Tempore corrupti labore voluptate deleniti, harum cupiditate nihil placeat quasi, aperiam obcaecati doloribus tenetur aliquid officia quis? Temporibus, magni ducimus delectus illo odio similique qui.</p>
-                <button class="button">Read More <i class="bi bi-arrow-right"></i></button>
+                <button class="button"><a href="about.html">Read More</a> <i class="bi bi-arrow-right"></i></button>
             </div>
         </div>
       </section>
       <section>
-        <!-- <div class="wrapper">
+        <div class="offer">
+            <h2>What we offer?</h2>
+        </div>
+        <div class="wrapper">
+            
             <div class="wrapper_container">
-                <i class="fa-light fa-burger-soda"></i>
+                <img src="/project/images/home.jpg" alt="">
                  <p>Lorem, ipsum dolor.</p>
             </div>
             <div class="wrapper_container">
@@ -70,8 +87,11 @@
                  <p>Lorem, ipsum dolor.</p>
             </div>
         </div>
-      </section> -->
+      </section>
       <section>
+        <div class="food_offer">
+            <h2>food type which can be offered by Us</h2>
+        </div>
         <div class="food_container">
             <div class="card">
                 <img src="../project/images/home.jpg" alt="">
@@ -119,6 +139,30 @@
             </div>
         </div>
       </section>
+      <section class="gallery">
+        <h2>Food Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="/project/images/home.jpg" alt="Delicious Food 1">
+            </div>
+            <div class="gallery-item">
+                <img src="/project/images/home.jpg" alt="Delicious Food 2">
+            </div>
+            <div class="gallery-item">
+                <img src="/project/images/home.jpg" alt="Delicious Food 3">
+            </div>
+            <div class="gallery-item">
+                <img src="/project/images/home.jpg" alt="Delicious Food 4">
+            </div>
+            <div class="gallery-item">
+                <img src="/project/images/home.jpg" alt="Delicious Food 5">
+            </div>
+            <div class="gallery-item">
+                <img src="/project/images/home.jpg" alt="Delicious Food 6">
+            </div>
+        </div>
+    </section>
+    
     </main>
     <footer>
         <div class="footer footer_container">
@@ -142,7 +186,7 @@
             </article>
             <article>
                 <h2>Support Links</h2>
-                <ul class="links">
+                <ul class="links" style="list-style: none;">
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="menu.html">Menu Page</a></li>
