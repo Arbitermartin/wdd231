@@ -88,6 +88,19 @@ body {
   color: var(--color-white);
 }
 /* end of the navigation bar style */
+/* visit message style */
+#visit-message {
+  margin: 15px;
+  padding: 10px;
+  background: var(--color-bg);
+  color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.1em;
+  width: 100%;
+  max-width: 1200px;
+}
 
 /* Preloader Styles */
 #preloader {
@@ -142,7 +155,9 @@ body {
   justify-content: center;
 }
 
+
 .header_left img {
+  margin-top: 23px;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -415,31 +430,6 @@ button:hover {
   width: 50%;
   border-radius: 10px;
 }
-
-/* section {
-  padding: 20px;
-}
-.menu-item {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin: 10px;
-  display: inline-block;
-  width: 90%;
-  max-width: 300px;
-  text-align: left;
-}
-button {
-  background: #ff6600;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  width: 100%;
-}
-.menu_container{
-  background: url("../images/foods.jpg");
-} */
-/* gallery style */
 .gallery {
   text-align: center;
   padding: 50px 20px;
@@ -479,6 +469,89 @@ button {
   box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
 /* end of gallery */
+/* meamber card */
+.toggle-buttons {
+  text-align: center;
+  margin: 20px;
+  
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: var(--color-bg);
+  border: none;
+  color: var(--color-white);
+} 
+#member-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+/* Member Card Styles */
+.member-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* background: var(--color-bg); */
+  color: var(--color-black);
+}
+.member-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+/* member card animation */
+/* Keyframe animation for smooth entry */
+@keyframes fadeInUp {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/* Styling for membership-level cards */
+.member-card {
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+animation: fadeInUp 0.8s ease-out;
+}
+
+/* Hover effect to enhance interactivity */
+.member-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+#grid-view{
+  border-radius: 0.4rem;
+}
+.member-card a{
+  color: var(--color-white);
+}
+
+/* Grid View */
+.grid-view .member-card {
+  display: inline-block;
+}
 /* Thank You Page Styles */
 .thank-you-section {
   display: flex;
@@ -559,6 +632,101 @@ button {
     color: #FFFFFF;
    
 }
+/* Membership Cards  */
+.price{
+  text-align: center;
+}
+.memberships{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 900px;
+}
+
+
+.card_member {
+  background: var(--color-bg);
+  color: var(--color-white);
+  margin: 10px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  /* min-width: 200px; */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card_member:hover {
+  transform: scale(1.05);
+}
+.btn_3{
+  background: var(--color-gray-700);
+  border-radius: 0.4rem
+}
+.card_member {
+  position: relative; /* Ensures modal is positioned relative to this card */
+  padding-bottom: 50px; /* Space for modal */
+  background: var(--color-bg);
+  color: var(--color-white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the modal (dialog box) */
+.dialogBox {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 10px; /* Position it above the card's bottom */
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 300px;
+  padding: 15px;
+  background-color: var(--color-bg);
+  color: var(--color-white);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+  z-index: 1000; /* Ensures it's on top */
+  border: 1px solid #ddd;
+}
+
+/* Make sure the button does not overlap */
+.openButton {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: var(--color-gray-700);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.openButton:hover {
+  background-color: var(--color-gray-700);
+}
+
+/* Close button inside modal */
+.closeButton,.closeButton_1,.closeButton_2,.closeButton_3 {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: var(--color-gray-700);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background-color: var(--color-gray-700);
+}
+
 .footer{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -592,9 +760,20 @@ button {
     .footer{
         grid-template-columns: repeat(2,1fr);
     }
+    #member-container {
+      gap: 15px;
+    }
+  
 }
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
+  .member-card {
+    width: 80%;
+    max-width: 100%;
+  }
+  .memberships {
+    margin: 20px 60px;
+ }
   .container, .wrapper, .food_container, .box {
       flex-direction: column;
       align-items: center;
@@ -603,10 +782,10 @@ button {
   .header_right {
       padding: 10px;
   }
-  .card p{
-      width: 100%;
-      height: 100px;
-  }
+  .card {
+    width: 80%; /* Set width to fit two items per row */
+    margin-bottom: 20px; /* Add spacing */
+}
     /* footer style */
     .footer{
       grid-template-columns: 1fr;
@@ -691,5 +870,8 @@ button {
 .nav_links {
     top: 100%;
     margin: 5px 0px;
+}
+.memberships{
+  margin: 20px 30px;
 }
 }

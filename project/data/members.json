@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Software company",
+      "address": "Head quater, Plot 144, Migombani st",
+      "phone": "+255659070100",
+      "image": "../images/softnet.jpg"
+    },
+    {
+      "name": "Tembosoft Limited",
+      "address": "2nd Floor, Mikumi House, 368 Msasani Road, Oysterbay, 14111 Dar es Salaam, Tanzania",
+      "phone": "+255745595692",
+      "image": "../images/tembosoft.png"
+      
+    },
+    {
+      "name": "Powersoft Communications Limited",
+      "address": "Sam Nujoma Road Mwenge, Dar es Salaam",
+      "phone": "+255 746 805 383",
+      "image": "../images/powersoft.png"
+      
+    }
+    
+   
+     
+    
+  ]
