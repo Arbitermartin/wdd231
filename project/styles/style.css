@@ -622,16 +622,7 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   to { transform: translateY(0); opacity: 1; }
 }
 
- /*footer style  */
- footer {
-    display: grid;
-    place-items: center;
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: var(--color-bg);
-    color: #FFFFFF;
-   
-}
+
 /* Membership Cards  */
 .price{
   text-align: center;
@@ -726,6 +717,16 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 .closeButton:hover {
   background-color: var(--color-gray-700);
 }
+ /*footer style  */
+ footer {
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--color-bg);
+  color: #FFFFFF;
+ 
+}
 
 .footer{
     display: grid;
@@ -750,6 +751,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   text-decoration: none;
     color: var(--color-white); 
      
+}
+.links{
+  list-style-type: none;
 }
 .footer .links a:hover{
     color: var(--mporipori-color);
