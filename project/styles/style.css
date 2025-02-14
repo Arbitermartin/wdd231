@@ -326,7 +326,7 @@ body {
 
 /* about us page */
 .about{
-  background-image: url("../images/foods.jpg");
+  background-image: url("../images/food1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -813,6 +813,9 @@ box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   .navbar-toggler {
       display: block;
+  }
+  .button{
+    margin-bottom: 2rem;
   }
   /* end of the nav style  */
 }
