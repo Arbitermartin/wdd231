@@ -40,74 +40,46 @@ document.getElementById('toggleButton').addEventListener('click',function(){
 //   end of this fetch
 
 // menu style
-let cart = [];
-function addToCart(item, price) {
-    cart.push({ item, price });
-    updateCart();
-}
-function updateCart() {
-    let cartList = document.getElementById("cart-items");
-    let totalElement = document.getElementById("total");
-    cartList.innerHTML = "";
-    let total = 0;
-    cart.forEach(({ item, price }) => {
-        let li = document.createElement("li");
-        li.textContent = `${item} - $${price.toFixed(2)}`;
-        cartList.appendChild(li);
-        total += price;
-    });
-    totalElement.textContent = total.toFixed(2);
-}
-// Cart array to store items
-// let cart = [];
+    // Cart Storage
+    let cart = [];
 
-
-// Function to add item to cart
-function addToCart(name, price) {
-    cart.push({ name, price });
-    updateCart();
-}
-
-// Function to update cart display
-function updateCart() {
-    let cartList = document.getElementById("cart-list");
-    let cartTotal = document.getElementById("cart-total");
-    cartList.innerHTML = "";
-    let total = 0;
-
-    cart.forEach((item, index) => {
-        total += item.price;
-        let li = document.createElement("li");
-        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-        cartList.appendChild(li);
-    });
-
-    cartTotal.textContent = `$${total.toFixed(2)}`;
-}
-
-// Function to place order
-function placeOrder() {
-    if (cart.length === 0) {
-        alert("Your cart is empty!");
-        return;
+    function addToCart(item, price) {
+        cart.push({ item, price });
+        updateCart();
     }
-
-    // Hide cart and show thank you message
-    document.querySelector(".cart-container").style.display = "none";
-    document.getElementById("thank-you").classList.remove("hidden");
-
-    // Show order details
-    let orderDetails = document.getElementById("order-details");
-    orderDetails.innerHTML = "";
-    cart.forEach((item) => {
-        let li = document.createElement("li");
-        li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-        orderDetails.appendChild(li);
-    });
-
-    // Clear cart
-    cart = [];
-}
+    
+    function updateCart() {
+        let cartList = document.getElementById("cart-items");
+        let totalPrice = document.getElementById("total-price");
+        cartList.innerHTML = "";
+        let total = 0;
+    
+        cart.forEach((product, index) => {
+            let listItem = document.createElement("li");
+            listItem.innerHTML = `${product.item} - $${product.price.toFixed(2)} 
+                <button onclick="removeFromCart(${index})">X</button>`;
+            cartList.appendChild(listItem);
+            total += product.price;
+        });
+    
+        totalPrice.innerText = total.toFixed(2);
+    }
+    
+    function removeFromCart(index) {
+        cart.splice(index, 1);
+        updateCart();
+    }
+    
+    function placeOrder() {
+        if (cart.length === 0) {
+            alert("Your cart is empty!");
+            return;
+        }
+    
+        
+        
+    }
+    
 // member style
 document.addEventListener("DOMContentLoaded", async () => {
     const container = document.getElementById("member-container");
