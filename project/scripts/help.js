@@ -1,13 +1,4 @@
-// TOGGLE BUTTON
-document.getElementById('toggleButton').addEventListener('click',function(){
-  let navMenu = document.getElementById('navMenu');
-  if (navMenu.classList.contains('show')) {
-      this.innerHTML = ' <i class="fa fa-bars"></i>';
-  } else {
-      this.innerHTML = '<i class="fa fa-x"></i>';
-  }
-  navMenu.classList.toggle('show');
-});
+
 // Show preloader for 1 minute before showing the main website
 setTimeout(function() {
   document.getElementById("preloader").style.display = "none";
