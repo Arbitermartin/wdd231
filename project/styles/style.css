@@ -84,7 +84,10 @@ body {
   color: white;
   cursor: pointer;
 }
-.bi{
+.fa-light{
+  color: var(--color-white);
+}
+.fa-duotone{
   color: var(--color-white);
 }
 /* end of the navigation bar style */

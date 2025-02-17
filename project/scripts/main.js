@@ -3,9 +3,9 @@
 document.getElementById('toggleButton').addEventListener('click',function(){
     let navMenu = document.getElementById('navMenu');
     if (navMenu.classList.contains('show')) {
-        this.innerHTML = '<i class="bi bi-list"></i>';
+        this.innerHTML = ' <i class="fa-light fa-bars"></i>';
     } else {
-        this.innerHTML = '<i class="bi bi-x"></i>';
+        this.innerHTML = '<i class="fa-duotone fa-regular fa-x"></i>';
     }
     navMenu.classList.toggle('show');
 });
