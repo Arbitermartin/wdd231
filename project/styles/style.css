@@ -84,7 +84,7 @@ body {
   color: white;
   cursor: pointer;
 }
-.fa-light{
+.fa{
   color: var(--color-white);
 }
 .fa-duotone{
