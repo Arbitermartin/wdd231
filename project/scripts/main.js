@@ -9,17 +9,7 @@ setTimeout(function() {
 
 
 
-// TOGGLE BUTTON
-document.getElementById('toggleButton').addEventListener('click',function(){
-    let navMenu = document.getElementById('navMenu');
-    if (navMenu.classList.contains('show')) {
-        this.innerHTML = '<i class="bi bi-list"></i>';
-    } else {
-        this.innerHTML = '<i class="bi bi-x"></i>';
-    }
-    navMenu.classList.toggle('show');
-});
-
+ 
 // menu style
     // Cart Storage
     let cart = [];
