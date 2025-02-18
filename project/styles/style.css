@@ -149,6 +149,7 @@ body {
 .header_right {
   text-align: center;
   padding: 20px;
+  line-height: 1.6rem;
 }
 .button {
   padding: 10px 20px;
@@ -316,6 +317,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 20px 70px;
+  line-height: 1.5rem;
 
 }
 /* Menu Section */
