@@ -283,6 +283,7 @@ body {
   flex: 1;
   min-width: 300px;
   padding: 20px;
+  line-height: 1.6rem;
 }
 .contact-card {
   background: white;
