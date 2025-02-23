@@ -194,9 +194,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-.food_container:hover{
-  line-height: scale(1.1);
-}
 .card {
   flex: 1 1 300px;
   margin: 15px;
